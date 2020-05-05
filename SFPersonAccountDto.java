@@ -16,13 +16,13 @@ public class SFPersonAccountDto implements Serializable {
   private static final long serialVersionUID = 1L;
   public static final String FIRST_NAME = "firstName";
   public static final String LAST_NAME = "lastName";
-  public static final String EXTERNAL_ID = "fe_external_id__c";
+  public static final String EXTERNAL_ID = "external_id__c";
   public static final String PLAN_OWNER = "plan_owner__c";
   public static final String SERVICES_ELIGIBLE = "Services_Eligible__c";
 
   private String firstName;
   private String lastName;
-  private String fe_external_id__c;
+  private String external_id__c;
   private String plan_owner__c;
   private String Services_Eligible__c;
 
@@ -48,12 +48,12 @@ public class SFPersonAccountDto implements Serializable {
 
   @JsonProperty(EXTERNAL_ID)
   @JsonView(JsonViews.DefaultFullyAuthenticated.class)
-  public String getfe_external_id__c() {
-    return fe_external_id__c;
+  public String getexternal_id__c() {
+    return external_id__c;
   }
 
-  public void setfe_external_id__c(String fe_external_id__c) {
-    this.fe_external_id__c = fe_external_id__c;
+  public void setexternal_id__c(String external_id__c) {
+    this.external_id__c = external_id__c;
   }
 
   @JsonProperty(PLAN_OWNER)
